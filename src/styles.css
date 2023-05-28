@@ -72,3 +72,19 @@ footer {
 h4 {
   margin-left: 20px;
 }
+
+.user{
+  margin-left: 10px;
+  font-size: 0.8em;
+  text-decoration: underline;
+  font-weight: bold;
+  
+}
+
+.foto{
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid green;
+  border-radius: 50px;
+}
