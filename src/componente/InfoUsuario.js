@@ -1,13 +1,13 @@
 import React from "react";
 import user from "../img/user.jpg"
 
-const InfoUsuario=()=>{
-    const nome="Fernando Rocha";
+const InfoUsuario=(props)=>{
+    
 
 
     return(
         <div className="user">
-            <p>Autor: {nome}</p>
+            <p>Autor: {props.nome}</p>
             <img className="foto" src={user} alt="Foto user" />
 
 

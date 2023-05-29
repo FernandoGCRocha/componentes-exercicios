@@ -1,10 +1,60 @@
 import React from "react";
-import "./styles.css";
+
 import CardVideo from "./componente/CardVideo"
+import Menu from "./componente/Menu";
+
+
+
+import "./styles.css";
 
 export default function App() {
   
   
+  const card = {
+    imagem: "https://picsum.photos/400/400?a=1 ",
+    nome: "Fernando Rocha",
+    titulo: "Titulo 1"
+    
+    
+  }
+  const card2 = {
+    imagem: "https://picsum.photos/400/400?a=2 ",
+    nome: "Bianca Rocha",
+    titulo: "Titulo 2"
+  }
+  const card3 = {
+    imagem: "https://picsum.photos/400/400?a=3 ",
+    nome: "Ana Rocha",
+    titulo: "Titulo 3"
+  }
+  const card4 = {
+    imagem: "https://picsum.photos/400/400?a=4 ",
+    nome: "Fred Rocha",
+    titulo: "Titulo 4"
+  }
+  const card5 = {
+    imagem: "https://picsum.photos/400/400?a=5 ",
+    nome: "Felipe Rocha",
+    titulo: "Titulo 5"
+  }
+  const card6 = {
+    imagem: "https://picsum.photos/400/400?a=6 ",
+    nome: "Rubens Rocha",
+    titulo: "Titulo 6"
+  }
+  const card7 = {
+    imagem: "https://picsum.photos/400/400?a=7 ",
+    nome: "Fernando Rocha",
+    titulo: "Titulo 7"
+  }
+  const card8 = {
+    imagem: "https://picsum.photos/400/400?a=8 ",
+    nome: "Fernando Rocha",
+    titulo: "Titulo 8"
+  }
+
+
+
   return (
     <div>
       <div className="tela-inteira">
@@ -15,18 +65,23 @@ export default function App() {
 
         <main>
           <nav className="menu-vertical">
-            <ul>
-              <li className="botoes-meunu-vertical">Início</li>
-              <li className="botoes-meunu-vertical">Em alta</li>
-              <li className="botoes-meunu-vertical">Inscrições</li>
-              <hr />
-              <li className="botoes-meunu-vertical">Originais</li>
-              <li className="botoes-meunu-vertical">Histórico</li>
-            </ul>
+            <Menu />
           </nav>
-          <CardVideo/>
-          
-          
+          <section className="painel-de-videos">
+            <CardVideo card={card} />
+            <CardVideo card={card2} />
+            <CardVideo card={card3} />
+            <CardVideo card={card4} />
+            <CardVideo card={card5} />
+            <CardVideo card={card6} />
+            <CardVideo card={card7} />
+            <CardVideo card={card8} />
+
+
+          </section>
+
+
+
         </main>
 
         <footer>
